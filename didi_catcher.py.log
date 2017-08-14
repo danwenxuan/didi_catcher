@@ -1,0 +1,27 @@
+﻿2017-05-04 15:31:52,799 [MainThread]start to work...
+2017-05-04 15:31:52,799 [MainThread]FLOW: get my orders
+2017-05-04 15:31:53,158 [MainThread]FLOW: GOT =================12 ==================orders
+2017-05-04 15:31:53,158 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,158 [MainThread]今天 16:10 (高新园区(敬贤街)->国际新城) price=11.1
+2017-05-04 15:31:53,174 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,174 [MainThread]今天 18:05 (腾飞软件园5号楼->东方圣克拉二期) price=11.7
+2017-05-04 15:31:53,174 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,174 [MainThread]今天 17:00 (大商超级市场幸福e家店->成园温泉山庄) price=17
+2017-05-04 15:31:53,190 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,190 [MainThread]今天 17:40 (创业大厦->大连东软信息学院) price=10.5
+2017-05-04 15:31:53,190 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,190 [MainThread]今天 17:20 (辽宁省集成电路设计产业基地->新新园住宅区) price=8.5
+2017-05-04 15:31:53,206 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,206 [MainThread]今天 17:10 (大连软件园24号楼附近->万科假日风景小北园) price=13.7
+2017-05-04 15:31:53,206 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,220 [MainThread]今天 17:40 (创业大厦B座->杨树北街10号) price=8.8
+2017-05-04 15:31:53,220 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,220 [MainThread]今天 17:40 (万达广场-公交站->蔡大岭-地铁站) price=10.7
+2017-05-04 15:31:53,236 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,236 [MainThread]今天 18:05 (招商银行(大连软件园支行)->大华锦绣华城博广园) price=8.7
+2017-05-04 15:31:53,236 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,236 [MainThread]今天 18:10 (锦辉购物广场(书香园店)->大有恬园一期) price=8.5
+2017-05-04 15:31:53,252 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,252 [MainThread]今天 17:00 (东北财经大学->交通大学[地铁站]) price=9.5
+2017-05-04 15:31:53,252 [MainThread]FLOW: filter orders
+2017-05-04 15:31:53,267 [MainThread]今天 16:30 (华录蓝灵幼儿园->山海一家) price=7.2
