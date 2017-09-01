@@ -1,11 +1,10 @@
 ---
 title:   batman 测试框架用户使用手册1.0
 tags: 接口测试,自动化测试,python
-grammar_cjkRuby: true
 ---
 
 
-##  一、测试框架背景及目的
+##  一 测试框架背景及目的
   
 
  - 传统的软件测试大多是白盒测试,单元测试和接口测试尤为明显,测试人员都是根据开发人员开发出一个功能,然后对任何合理的输入和不合理的输入	,进行鉴别和响应,最后对整个模块的测试结果进行分析.编写测试报告
@@ -15,7 +14,7 @@ grammar_cjkRuby: true
 
 
 ----------
-##  二、框架的概念集合
+##  二 框架的概念集合
  - 测试工程(project): 进行测试工作前要先创建一个测试工程,新建的测试工程会有框架的基本的配置和测试步骤模板.工程是根目录,测试集和测试步骤都在工程里创建
 
  -  测试集(collection):测试集可以包含测试步骤和测试子集，测试集类似文件夹，是一个自包含的结构测试集是涵盖整个工程.首先测试工程就是一个特殊测试集.普通测试集有特殊的命名 命名由前缀 ,索引 ,后缀组成.
@@ -33,30 +32,34 @@ grammar_cjkRuby: true
     * 002-HTTP测试模板模板: 包括HTTP录制过程的模板
     *  003-JSONRPC测试模板: 包括JSONRPC的录制模板
 
-## 三、实例操作
-
-- create指令
-	* 进入测试框架, 创建一个工程   语句 " batman create project " 然后一直按提示创建配置文件,以便适合自己的项目.
+## 三 实例操作
+ - 框架安装
+    * 电脑配置要求:  64bit系统,linux或者windows.能够运行python程序
+    * python的安装教程 http://jingyan.baidu.com/article/eb9f7b6da950c4869364e8f5.html python版本选择3.6.0以上 python安装完成后,需要新建虚拟环境命名为batman http://www.cnblogs.com/Finley/p/5925928.html
+ 
+     *  执行 requirment.txt文件 安装测试框架 
+-   create指令
+	*  进入测试框架, 创建一个工程   语句 " batman create project " 然后一直按提示创建配置文件,以便适合自己的项目.
 	例如" batman create-project"
-	请输入项目名称:  hello
-	请输入项目配置 "project.name" 的值，缺省为 [本人很懒项目]:first test
-	请输入项目配置 "http.url" 的值，缺省为 [http://www.pupuwang.com/]: 默认回车
-请输入项目配置 "project.description" 的值，缺省为 [如果没有写描述, 说明本人很懒]: first test
-请输入项目配置 "http.timeout" 的值，缺省为 [30]: ,默认回车
-请输入项目配置 "context.id" 的值，缺省为 [empty]: 默认回车
+		 - 请输入项目名称:  hello
+		 - 请输入项目配置 "project.name" 的值，缺省为 [本人很懒项目]:first test
+		 - 请输入项目配置 "http.url" 的值，缺省为 [http://www.pupuwang.com/]: 默认回车
+		- 请输入项目配置 "project.description" 的值，缺省为 [如果没有写描述, 说明本人很懒]: first test
+		- 请输入项目配置 "http.timeout" 的值，缺省为 [30]: ,默认回车
+		- 请输入项目配置 "context.id" 的值，缺省为 [empty]: 默认回车
 后来系统提示生成一个hello的project项目
 	* 创建项目完成后,在项目路径下创建测试集 输入"batman create collection" 按提示创建适合自己的collection
-	请输入测试集类型：[suite, case, exp], 缺省值为 [suite]: suite   
-	请输入测试集的编号, -1 代表自动编号（缺省值：-1） [-1]: 
-请输入测试集的说明 []:firstcollection
+	 	 -  请输入测试集类型：[suite, case, exp], 缺省值为 [suite]: suite   
+		 -  请输入测试集的编号, -1 代表自动编号（缺省值：-1） [-1]: 
+		- 请输入测试集的说明 []:firstcollection
 生成的测试集的按前缀+索引号+后缀来生成的测试集文件名
 
 
 	* 创建步骤完成后 输入"batman create step" 按提示创建需要的step
-请输入模板的编号，缺省值为 [-1]: 001
-请输入测试步骤的类型：('step', 'setup', 'teardown'), 缺省值为 [step]: setup
-请输入测试步骤的编号, -1 代表自动编号，缺省值为 [-1]: 100
-请输入测试步骤的说明 []: firststep
+		 - 请输入模板的编号，缺省值为 [-1]: 001
+		- 请输入测试步骤的类型：('step', 'setup', 'teardown'), 缺省值为 [step]: setup
+		- 请输入测试步骤的编号, -1 代表自动编号，缺省值为 [-1]: 100
+		 - 请输入测试步骤的说明 []: firststep
 根据这样操作创建了一个完成的测试步骤
     *  每个新的测试集都要新建属于自己的steup测试步骤和teardown测试步骤 .所以创建测试集的时候需要按照操作创建自己的setup测试步骤和teardown测试步骤.
     
